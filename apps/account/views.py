@@ -80,22 +80,27 @@ class ForCodeView(View):
 
     def post(self, request):
         mobile = request.POST.get('mobile', None)
+        password = request.POST.get('password', None)
         if mobile:
             # 验证是否为有效手机号
             mobile_pat = re.compile('^(13\d|14[5|7]|15\d|166|17[3|6|7]|18\d)\d{8}$')
             res = re.search(mobile_pat, mobile)
             if res:
-                # 生成手机验证码
-                c = random.randint(100000, 999999)
-                code = VerifyCode.objects.create(code=str(c), mobile=mobile)
-                code.save()
-                code = VerifyCode.objects.filter(code=str(c)).first()
-                # yunpian = YunPian(APIKEY)
-                # sms_status = yunpian.send_sms(code=code, mobile=mobile)
-
-                # 验证 验证码未解决
-                msg = '发送成功，请查收!'
-                return HttpResponse(msg)
+                if password:
+                    # 生成手机验证码
+                    c = random.randint(100000, 999999)
+                    code = VerifyCode.objects.create(code=str(c), mobile=mobile)
+                    code.save()
+                    code = VerifyCode.objects.filter(code=str(c)).first()
+                    # yunpian = YunPian(APIKEY)
+                    # sms_status = yunpian.send_sms(code=code, mobile=mobile)
+                    reg = UserProfile.objects.create(mobile=mobile,password=(make_password(password)))
+                    reg.save()
+                    msg = '发送成功，请查收!'
+                    return HttpResponse(msg)
+                else:
+                    msg = '请输入账户密码!'
+                    return HttpResponse(msg)
             else:
                 msg = '请输入有效手机号码!'
                 return HttpResponse(msg)

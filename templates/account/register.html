@@ -8,9 +8,10 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-    <title>智慧校园在线注册</title>
+    <title>北京网络职业学院在线注册</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="Shortcut Icon" href="{% static 'images/1.jpg' %}" />
     <style>
         #tab-form{
             display: none;
@@ -20,12 +21,13 @@
 <body>
 <div class="bg" id="dialogBg"></div>
 <header>
+
     <div class="c-box fff-box">
         <div class="wp header-box">
-            <p class="fl hd-tips">智慧校园考试系统</p>
+            <p class="fl hd-tips">北京网络职业学院考试系统</p>
             <ul class="fr hd-bar">
-                <li>服务电话：<span>4001008031</span></li>
-                <li><a href="">[登录]</a></li>
+                <li>服务电话：<span>010-81303630</span></li>
+                <li><a href="{% url 'login' %}">[登录]</a></li>
                 <li class="active"><a href="{% url 'register' %}">[注册]</a></li>
             </ul>
         </div>
@@ -36,18 +38,17 @@
         <div class="login-box clearfix">
             <div class="hd-login clearfix">
                 <a class="index-logo" href=""></a>
-                <h1>用户注册</h1>
                 <a class="index-font" href="">回到首页</a>
             </div>
             <div class="fl slide">
                 <div class="imgslide">
                     <ul class="imgs">
 
-                        <li><a href=""><img width="483" height="472" src="{% static 'images/57a801860001c34b12000460.jpg' %}" /></a></li>
+                        <li><a href=""><img width="483" height="472" src="{% static 'images/11.jpg' %}" /></a></li>
 
-                        <li><a href=""><img width="483" height="472" src="{% static 'images/57a801860001c34b12000460.jpg' %}" /></a></li>
+                        <li><a href=""><img width="483" height="472" src="{% static 'images/22.jpg' %}" /></a></li>
 
-                        <li><a href=""><img width="483" height="472" src="{% static 'images/57a801860001c34b12000460.jpg' %}" /></a></li>
+                        <li><a href=""><img width="483" height="472" src="{% static 'images/33.jpg' %}" /></a></li>
 
                     </ul>
                 </div>
@@ -115,7 +116,7 @@
                         <input class="btn btn-green" id="jsEmailRegBtn" type="submit" value="注册并登录" />
                     </form>
                 </div>
-                <p class="form-p">已有账号？<a href="">[立即登录]</a></p>
+                <p class="form-p">已有账号？<a href="{% url 'login' %}">[立即登录]</a></p>
             </div>
         </div>
     </div>
@@ -159,7 +160,8 @@ setTimeout(function() {
             url:"{% url 'forcode' %}",
             data:{
                csrfmiddlewaretoken:$('[name="csrfmiddlewaretoken"]').val(),
-               'mobile':$("#jsRegMobile").val()
+               'mobile':$("#jsRegMobile").val(),
+               'password':$("#jsPhoneRegPwd").val()
             },
             async:true,
             success:function (data) {
