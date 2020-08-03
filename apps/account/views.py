@@ -14,12 +14,7 @@ from django.views.generic.base import View
 from utils import weibo
 from utils.email_send import send_register_eamil
 from .forms import RegisterForm, LoginForm, ForgetPwdForm, ModifyPwdForm
-from .models import UserProfile, EmailVerifyRecord, VerifyCode
-
-
-# 首页视图
-def index(request):
-    return render(request, 'account/index.html')
+from apps.account.models import UserProfile, EmailVerifyRecord, VerifyCode
 
 
 # 激活用户功能视图
@@ -36,14 +31,14 @@ class ActiveUserView(View):
                 user.is_active = True
                 user.save()
                 # 激活成功跳转到登录页面
-                return render(request, "account/login.html", )
+                return render(request, "login.html", )
             # 验证码不对的时候跳转到激活失败页面
             else:
-                return render(request, 'account/active_fail.html')
+                return render(request, 'active_fail.html')
             # 自己瞎输的验证码
 
         else:
-            return render(request, "account/register.html", {"msg": "您的激活链接无效"})
+            return render(request, "register.html", {"msg": "您的激活链接无效"})
 
 
 # 邮箱注册视图
@@ -51,7 +46,7 @@ class RegisterView(View):
 
     def get(self, request):
         register_form = RegisterForm()
-        return render(request, 'account/register.html', {'register_form': register_form})
+        return render(request, 'register.html', {'register_form': register_form})
 
     def post(self, request):
         register_form = RegisterForm(request.POST)
@@ -68,15 +63,15 @@ class RegisterView(View):
             user_profile.password = make_password(pass_word)
             user_profile.save()
             send_register_eamil(user_name, 'register')
-            return render(request, 'account/send_success.html')
+            return render(request, 'send_success.html')
         else:
-            return render(request, 'account/register.html', {'register_form': register_form})
+            return render(request, 'register.html', {'register_form': register_form})
 
 
 # 手机号注册视图
 class ForCodeView(View):
     def get(self, request):
-        return render(request, 'account/register.html')
+        return render(request, 'register.html')
 
     def post(self, request):
         mobile = request.POST.get('mobile', None)
@@ -125,7 +120,7 @@ class CustomBackend(ModelBackend):
 class LoginView(View):
 
     def get(self, request):
-        return render(request, 'account/login.html')
+        return render(request, 'login.html')
 
     def post(self, request):
 
@@ -143,14 +138,14 @@ class LoginView(View):
                     login(request, user)
                     return HttpResponseRedirect(reverse('index'))
                 else:
-                    return render(request, 'account/login.html', {'msg': '用户名或密码错误', 'login_form': login_form})
+                    return render(request, 'login.html', {'msg': '用户名或密码错误', 'login_form': login_form})
 
             else:
-                return render(request, 'account/login.html', {'msg': '用户名或密码错误', 'login_form': login_form})
+                return render(request, 'login.html', {'msg': '用户名或密码错误', 'login_form': login_form})
 
 
         else:
-            return render(request, 'account/login.html', {'login_form': login_form})
+            return render(request, 'login.html', {'login_form': login_form})
 
 
 # 注销功能视图
@@ -166,7 +161,7 @@ class ForgetPwdView(View):
 
     def get(self, request):
         forget_form = ForgetPwdForm()
-        return render(request, 'account/forgetpwd.html', {'forget_form': forget_form})
+        return render(request, 'forgetpwd.html', {'forget_form': forget_form})
 
     def post(self, request):
         forget_form = ForgetPwdForm(request.POST)
@@ -174,9 +169,9 @@ class ForgetPwdView(View):
             email = request.POST.get('email', None)
             # 发送邮箱
             send_register_eamil(email, 'forget')
-            return render(request, 'account/send_success.html')
+            return render(request, 'send_success.html')
         else:
-            return render(request, 'account/forgetpwd.html', {'forget_form': forget_form})
+            return render(request, 'forgetpwd.html', {'forget_form': forget_form})
 
 
 # 邮箱修改密码视图
@@ -189,15 +184,15 @@ class ModifyPwdView(View):
             pwd2 = request.POST.get("password2", "")
             email = request.POST.get("email", "")
             if pwd1 != pwd2:
-                return render(request, "account/password_reset.html", {"email": email, "msg": "密码不一致！"})
+                return render(request, "password_reset.html", {"email": email, "msg": "密码不一致！"})
             user = UserProfile.objects.get(email=email)
             user.password = make_password(pwd2)
             user.save()
 
-            return render(request, "account/login.html")
+            return render(request, "login.html")
         else:
             email = request.POST.get("email", "")
-            return render(request, "account/password_reset.html", {"email": email, "modify_form": modify_form})
+            return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
 
 
 # 重置密码视图
@@ -207,10 +202,10 @@ class ResetView(View):
         if all_records:
             for record in all_records:
                 email = record.email
-                return render(request, "account/password_reset.html", {"email": email})
+                return render(request, "password_reset.html", {"email": email})
         else:
-            return render(request, "account/active_fail.html")
-        return render(request, "account/login.html")
+            return render(request, "active_fail.html")
+        return render(request, "login.html")
 
 
 # 跳转微博登录请求视图
