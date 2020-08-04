@@ -29,20 +29,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# 重载AUTH_USER_MODEL
-AUTH_USER_MODEL = 'account.UserProfile'
-
-# 手机号码正则表达式
-REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
-# 云片网APIKEY
-APIKEY = "4e9a8211181ab7ab112c73aae072820c"
 # Application definition
 
-AUTHENTICATION_BACKENDS = (
-    'account.views.CustomBackend',
-    'social_core.backends.weibo.WeiboOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-)
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,10 +43,6 @@ INSTALLED_APPS = [
     'apps.account',
     'apps.competition',
     'xadmin',
-    'reversion',
-    'crispy_forms',
-    'social_django',
-    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -160,9 +145,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'web/heads')
 BACKUP_URL = '/backup/'
 BACKUP_ROOT = os.path.join(BASE_DIR,'backup')
 
-EMAIL_HOST = "smtp.qq.com"  # SMTP服务器主机
-EMAIL_PORT = 25  # 端口
-EMAIL_HOST_USER = "1633099816@qq.com"  # 邮箱地址
-EMAIL_HOST_PASSWORD = "mittnmbycsateaeh"  # 密码
-EMAIL_USE_TLS = True
-EMAIL_FROM = "1633099816@qq.com"  # 邮箱地址
+
