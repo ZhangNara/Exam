@@ -66,10 +66,17 @@
         <div class="row" style="margin-top: 14px">
             <label>选择题库</label>
             <div>
-                <button class="xlsx1 btn btn-info dropdown-toggle">{% if bank %}{{ bank_info.bank_xlsx }}{% else %}选择题库{% endif %}</button>
-                {% for bank in bank_datas %}
-                    <a href="{% url 'set:set_test' %}?type={{ type_date }}&bank={{ bank.id }}" class="xlsx1 list-group-item btn btn-info" style="background-color: rgb(70, 184, 218);display: none">{{ bank.bank_xlsx }}</a>
-                {% endfor %}
+                <button id="btn01" class="btn btn-info dropdown-toggle">{% if bank %}{{ bank_info.bank_xlsx }}{% else %}选择题库{% endif %}</button>
+                <div id="pop_con" style="display: none;background: rgba(234,223,201,0.45);width: 250px;padding: 10px;border-radius: 10px">
+                    <span id="p01" style="font-size: 25px;margin-left: 210px;">×</span>
+                    {% if bank_datas %}
+                        {% for bank in bank_datas %}
+                            <a href="{% url 'set:set_test' %}?type={{ type_date }}&bank={{ bank.id }}" class="list-group-item btn btn-info" style="background-color: rgb(70, 184, 218)">{{ bank.bank_xlsx }}</a>
+                        {% endfor %}
+                    {% else %}
+                        <h3>还没有题库哦~，<a href="{% url 'set:set_bank' %}" style="color: red">去添加</a></h3>
+                    {% endif %}
+                </div>
                 {% if bank %}
                     <button class="xlsx2" style="background:#9acf6f">查看该题库信息</button>
                     <div class="xlsx2 xl" style="">
@@ -78,10 +85,10 @@
                             <li class="li"><span class="span">题库名称:</span><span class="span1">{{ bank_info.bank_xlsx }}</span></li>
                             <li class="li"><span class="span">题库分类:</span><span class="span1">{{ bank_info.bank_type }}</span></li>
                             <li class="li"><span class="span">题库总数:</span><span class="span1">{{ bank_info.bank_nums }}</span></li>
-                            <li class="li"><span class="span">单选题数:</span><span class="span1">{{ bank_info.bank_chio }}</span></li>
-                            <li class="li"><span class="span">多选题输:</span><span class="span1">{{ bank_info.bank_chios }}</span></li>
-                            <li class="li"><span class="span">判断题数:</span><span class="span1">{{ bank_info.bank_judge }}</span></li>
-                            <li class="li"><span class="span">填空提数:</span><span class="span1">{{ bank_info.bank_gap }}</span></li>
+                            <li class="li"><span class="span">单选题数（/5分）:</span><span class="span1">{{ bank_info.bank_chio }}</span></li>
+                            <li class="li"><span class="span">多选题输（/5分）:</span><span class="span1">{{ bank_info.bank_chios }}</span></li>
+                            <li class="li"><span class="span">判断题数（/5分）:</span><span class="span1">{{ bank_info.bank_judge }}</span></li>
+                            <li class="li"><span class="span">填空提数（/5分）:</span><span class="span1">{{ bank_info.bank_gap }}</span></li>
                             <li class="li"><span class="span">参与人数:</span><span class="span1">{{ bank_info.bank_person }}</span></li>
                             <li class="li"><span class="span">已出考试:</span><span class="span1">{{ bank_info.bank_bs }}</span></li>
                         </ul>
@@ -93,8 +100,8 @@
 
     <form method="post">
         <div class="col-md-4" style="margin-left: 60px">
-            <h3>配置比赛</h3>
-            <label for="competetionName">比赛名称</label>
+            <h3>配置考试</h3>
+            <label for="competetionName">考试名称</label>
             <input name="name" type="text" class="form-control" placeholder="填写比赛名称" />
             <label for="questionNum">出题数量</label>
             <input name="num" type="number" class="form-control" value="10" />
@@ -113,7 +120,7 @@
         </div>
         <div class="col-md-4" style="margin-left: 60px">
             <h3>配置页面数据(可选)</h3>
-            <label>比赛规则</label>
+            <label>考试规则</label>
             <textarea name="ruleText" class="form-control" placeholder="请输入比赛规则的内容，让答题者快速了解比赛内容"></textarea>
             <div style="margin-top: 30px">开启录入信息功能</div>
             <span id="userFormTips" style="margin-left: 5px" class="btn badge">?</span><br>
@@ -176,15 +183,22 @@
 
     <script>
     $(function () {
-        $('.xlsx1').on('click',function () {
-            $(this).next().toggle()
-        })
-    })
-    $(function () {
         $('.xlsx2').on('click',function () {
             $(this).next().toggle()
         })
     })
+
+    window.onload = function(){
+        let oBtn = document.getElementById("btn01"); //获取的按钮
+        let oDiv = document.getElementById("pop_con"); // 获取我们的背景和弹窗文字
+        let oP = document.getElementById("p01");
+        oBtn.onclick = function(){
+            oDiv.style.display = "block";
+        };
+        oP.onclick = function(){
+             oDiv.style.display = "none"
+        }
+    }
     </script>
 
 {% endblock %}

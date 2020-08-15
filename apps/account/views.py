@@ -52,10 +52,12 @@ class RegisterView(View):
         register_form = RegisterForm(request.POST)
         if register_form.is_valid():
 
+            nick_name = request.POST.get('nick_name', None)
             user_name = request.POST.get('email', None)
             pass_word = request.POST.get('password', None)
             # 实例化一个user_profile对象
             user_profile = UserProfile()
+            user_profile.nick_name = nick_name
             user_profile.username = user_name
             user_profile.email = user_name
             user_profile.is_active = False
@@ -218,9 +220,9 @@ def weibo_login(request):
 
 # 微博登录后回调函数视图
 class Bindemail(View):
-    def get(self, request):
-        code = request.args.get('code')
-        token = request.post('https://api.weibo.com/oauth2/access_token?client_id=' + weibo.client_id + '&client_s'
+    def get(self,request):
+        code = request.GET.get('code')
+        token = requests.post('https://api.weibo.com/oauth2/access_token?client_id=' + weibo.client_id + '&client_s'
                                                                                                         'ecret=' + weibo.client_secret + '&grant_type=authorization_'
                                                                                                                                          'code&redirect_uri=' + weibo.redirect_uri + '&code=' + code)
         text = json.loads(token.text)
@@ -229,18 +231,17 @@ class Bindemail(View):
         access_token = text['access_token']
         uid = text['uid']
         url = 'https://api.weibo.com/2/users/show.json?access_token=' + access_token + '&uid=' + uid
-        info = json.loads(request.get(url).text)
-        username = info['idstr']
-        uid = info['id']
-        name = info['name']
-        user = UserProfile.objects.filter_by(username=username, uid=uid).all()
+        info2 = requests.get(url)
+        info = info2.text
+        info1 = json.loads(info)
+        uid = info1['id']
+        print(uid)
+        name = info1['name']
+        user = UserProfile.objects.filter(username=name).first()
         if user:
-            login(request, user[0])
+            login(request, user,backend='django.contrib.auth.backends.ModelBackend')
             return redirect('/')
-        user_obj = UserProfile()
-        user_obj.username = username
-        user_obj.nick_name = name
-        user_obj.uid = uid
-        user_obj.is_activate = True
-        user_obj.save()
-        return redirect('/index/')
+        a = UserProfile.objects.create(username=str(name),last_login=datetime.datetime.now(),is_active=True,password=make_password(uid))
+        login(request, user,backend='django.contrib.auth.backends.ModelBackend')
+        a.save()
+        return redirect('/')

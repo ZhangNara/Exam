@@ -1,0 +1,1309 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:42:55 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1acfb90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1acfb90 pid: 31451 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31451)
+spawned uWSGI worker 1 (pid: 31461, cores: 1)
+spawned uWSGI worker 2 (pid: 31462, cores: 1)
+spawned uWSGI worker 3 (pid: 31463, cores: 1)
+spawned uWSGI worker 4 (pid: 31464, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:46:15 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xcf5b90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xcf5b90 pid: 2465 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2465)
+spawned uWSGI worker 1 (pid: 2471, cores: 1)
+spawned uWSGI worker 2 (pid: 2472, cores: 1)
+spawned uWSGI worker 3 (pid: 2473, cores: 1)
+spawned uWSGI worker 4 (pid: 2474, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:47:39 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:70).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:49:17 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:70).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:49:41 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:70).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:50:29 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x24c5b90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x24c5b90 pid: 6637 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6637)
+spawned uWSGI worker 1 (pid: 6664, cores: 1)
+spawned uWSGI worker 2 (pid: 6665, cores: 1)
+spawned uWSGI worker 3 (pid: 6666, cores: 1)
+spawned uWSGI worker 4 (pid: 6667, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:51:40 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x271ab90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x271ab90 pid: 7840 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7840)
+spawned uWSGI worker 1 (pid: 7854, cores: 1)
+spawned uWSGI worker 2 (pid: 7855, cores: 1)
+spawned uWSGI worker 3 (pid: 7858, cores: 1)
+spawned uWSGI worker 4 (pid: 7859, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:55:45 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xcc3b90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xcc3b90 pid: 12020 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12020)
+spawned uWSGI worker 1 (pid: 12036, cores: 1)
+spawned uWSGI worker 2 (pid: 12037, cores: 1)
+spawned uWSGI worker 3 (pid: 12038, cores: 1)
+spawned uWSGI worker 4 (pid: 12039, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 18:59:14 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2442b90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2442b90 pid: 15764 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15764)
+spawned uWSGI worker 1 (pid: 15780, cores: 1)
+spawned uWSGI worker 2 (pid: 15781, cores: 1)
+spawned uWSGI worker 3 (pid: 15782, cores: 1)
+spawned uWSGI worker 4 (pid: 15783, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 19:07:02 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x897bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x897bd0 pid: 24925 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24925)
+spawned uWSGI worker 1 (pid: 24940, cores: 30)
+spawned uWSGI worker 2 (pid: 24941, cores: 30)
+spawned uWSGI worker 3 (pid: 24942, cores: 30)
+spawned uWSGI worker 4 (pid: 24943, cores: 30)
+Gracefully killing worker 4 (pid: 24943)...
+Gracefully killing worker 3 (pid: 24942)...
+Gracefully killing worker 2 (pid: 24941)...
+Gracefully killing worker 1 (pid: 24940)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/Exam
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:7000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 19:07:49 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x2607610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2607610 pid: 24925 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 24925)
+spawned uWSGI worker 1 (pid: 27038, cores: 30)
+spawned uWSGI worker 2 (pid: 27039, cores: 30)
+spawned uWSGI worker 3 (pid: 27040, cores: 30)
+spawned uWSGI worker 4 (pid: 27041, cores: 30)
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://127.0.0.1:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://127.0.0.1:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://127.0.0.1:8000/bindemail
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:14:51 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:18:37 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:22:14 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1976bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1976bd0 pid: 10170 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10170)
+spawned uWSGI worker 1 (pid: 10176, cores: 30)
+spawned uWSGI worker 2 (pid: 10177, cores: 30)
+spawned uWSGI worker 3 (pid: 10178, cores: 30)
+spawned uWSGI worker 4 (pid: 10179, cores: 30)
+['9.0']
+['C']
+['C']
+['39.0']
+['(99,)']
+['-1.0']
+['C']
+['D']
+['C']
+['C']
+50
+1
+['B']
+['A']
+['A', 'B', 'C', 'D']
+['A', 'B', 'C', 'D']
+['对']
+15
+1
+Gracefully killing worker 4 (pid: 10179)...
+Gracefully killing worker 3 (pid: 10178)...
+Gracefully killing worker 2 (pid: 10177)...
+Gracefully killing worker 1 (pid: 10176)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/Exam
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:7000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:32:11 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0xd1d610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd1d610 pid: 10170 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10170)
+spawned uWSGI worker 1 (pid: 23712, cores: 30)
+spawned uWSGI worker 2 (pid: 23713, cores: 30)
+spawned uWSGI worker 3 (pid: 23714, cores: 30)
+spawned uWSGI worker 4 (pid: 23715, cores: 30)
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:41:44 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7000).
+bind(): Address already in use [core/socket.c line 769]
+DAMN ! worker 1 (pid: 23712) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 8863)
+DAMN ! worker 2 (pid: 23713) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 8864)
+DAMN ! worker 3 (pid: 23714) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 8865)
+DAMN ! worker 4 (pid: 23715) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 4 (new pid: 8866)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:42:31 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7000).
+bind(): Address already in use [core/socket.c line 769]
+DAMN ! worker 1 (pid: 8863) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 10106)
+DAMN ! worker 2 (pid: 8864) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 10107)
+DAMN ! worker 3 (pid: 8865) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 10108)
+DAMN ! worker 4 (pid: 8866) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 4 (new pid: 10109)
+DAMN ! worker 1 (pid: 10106) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 11040)
+DAMN ! worker 2 (pid: 10107) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 11041)
+DAMN ! worker 3 (pid: 10108) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 11042)
+DAMN ! worker 4 (pid: 10109) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 4 (new pid: 11043)
+Wed Aug  5 20:43:50 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Aug  5 20:43:50 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:44:37 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1f40bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f40bd0 pid: 13704 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13704)
+spawned uWSGI worker 1 (pid: 13720, cores: 30)
+spawned uWSGI worker 2 (pid: 13721, cores: 30)
+spawned uWSGI worker 3 (pid: 13722, cores: 30)
+spawned uWSGI worker 4 (pid: 13723, cores: 30)
+SIGINT/SIGQUIT received...killing workers...
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 20:48:31 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1355bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1355bd0 pid: 21624 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21624)
+spawned uWSGI worker 1 (pid: 21668, cores: 30)
+spawned uWSGI worker 2 (pid: 21669, cores: 30)
+spawned uWSGI worker 3 (pid: 21670, cores: 30)
+spawned uWSGI worker 4 (pid: 21671, cores: 30)
+['错']
+['A', 'B', 'C', 'D']
+['find etc*/.']
+['对']
+['C']
+15
+1
+Gracefully killing worker 4 (pid: 21671)...
+Gracefully killing worker 3 (pid: 21670)...
+Gracefully killing worker 2 (pid: 21669)...
+Gracefully killing worker 1 (pid: 21668)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/Exam
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:7000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  5 21:09:42 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1199610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1199610 pid: 21624 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 21624)
+spawned uWSGI worker 1 (pid: 31518, cores: 30)
+spawned uWSGI worker 2 (pid: 31519, cores: 30)
+spawned uWSGI worker 3 (pid: 31520, cores: 30)
+spawned uWSGI worker 4 (pid: 31521, cores: 30)
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+['空']
+['空']
+['空']
+['']
+['']
+0
+2
+['空']
+['空']
+['空']
+['']
+['']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+['空']
+0
+1
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:8000/bindemail
+['A']
+['B']
+['A', 'C', 'D']
+['00fdpoakfdo']
+['afdfa dfdafdfdafadfafddadfadfdafda']
+5
+1
+['123']
+['对']
+['对']
+['A']
+['对']
+['A']
+['A']
+['A']
+['A']
+['对']
+['对']
+['对']
+['2.5']
+['请问']
+['请问']
+['D']
+['爱上爹 ']
+['B', 'C', 'D']
+['错']
+['错']
+['错']
+['错']
+['高峰']
+['对']
+['A']
+['B']
+['B', 'C']
+['D']
+['错']
+['错']
+['爱上爹']
+['错']
+['爱上爹']
+['爱上爹']
+['错']
+['B', 'C', 'D']
+['错']
+['错']
+['D']
+['错']
+60
+1
+['123']
+['请问']
+['A']
+['su']
+['C']
+['A', 'B', 'C', 'D']
+['asd ']
+['python manage.py migrate']
+['python manage,py statapp']
+['A', 'B', 'C', 'D']
+20
+1
+['']
+['空']
+['']
+['']
+['空']
+['']
+['空']
+['']
+['空']
+['空']
+0
+2
+DAMN ! worker 1 (pid: 31518) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 27191)
+DAMN ! worker 2 (pid: 31519) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 27192)
+DAMN ! worker 3 (pid: 31520) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 27193)
+DAMN ! worker 4 (pid: 31521) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 4 (new pid: 27194)
+Thu Aug  6 10:37:48 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Aug  6 10:37:48 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 10:38:09 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1ab1bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1ab1bd0 pid: 28538 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28538)
+spawned uWSGI worker 1 (pid: 28570, cores: 30)
+spawned uWSGI worker 2 (pid: 28571, cores: 30)
+spawned uWSGI worker 3 (pid: 28572, cores: 30)
+spawned uWSGI worker 4 (pid: 28573, cores: 30)
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7000/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7000/bindemail
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 10:46:51 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1849bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1849bd0 pid: 13885 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13885)
+spawned uWSGI worker 1 (pid: 13913, cores: 30)
+spawned uWSGI worker 2 (pid: 13914, cores: 30)
+spawned uWSGI worker 3 (pid: 13915, cores: 30)
+spawned uWSGI worker 4 (pid: 13916, cores: 30)
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7070/bindemail
+https://api.weibo.com/oauth2/authorize?client_id=2798589275&response_type=code&redirect_uri=http://47.93.127.78:7070/bindemail
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 13:48:18 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x1c55bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1c55bd0 pid: 17608 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17608)
+spawned uWSGI worker 1 (pid: 17624, cores: 30)
+spawned uWSGI worker 2 (pid: 17625, cores: 30)
+spawned uWSGI worker 3 (pid: 17626, cores: 30)
+spawned uWSGI worker 4 (pid: 17627, cores: 30)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 13:53:07 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0x240fbd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x240fbd0 pid: 22776 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22776)
+spawned uWSGI worker 1 (pid: 22792, cores: 30)
+spawned uWSGI worker 2 (pid: 22793, cores: 30)
+spawned uWSGI worker 3 (pid: 22794, cores: 30)
+spawned uWSGI worker 4 (pid: 22795, cores: 30)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 13:53:36 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0xc2dbd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xc2dbd0 pid: 23401 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23401)
+spawned uWSGI worker 1 (pid: 23417, cores: 30)
+spawned uWSGI worker 2 (pid: 23418, cores: 30)
+spawned uWSGI worker 3 (pid: 23419, cores: 30)
+spawned uWSGI worker 4 (pid: 23420, cores: 30)
+Gracefully killing worker 4 (pid: 23420)...
+Gracefully killing worker 3 (pid: 23419)...
+Gracefully killing worker 2 (pid: 23418)...
+Gracefully killing worker 1 (pid: 23417)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/Exam
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:7000)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Aug  6 14:01:36 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 May 2020 10:19:23
+os: Linux-3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020
+nodename: iZ2zefe13ndkt7pf4v5iquZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/Exam
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/Exam
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:7000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/Exam/env
+Set PythonHome to /opt/Exam/env
+Python main interpreter initialized at 0xf6f610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1880720 bytes (1836 KB) for 120 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xf6f610 pid: 23401 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 23401)
+spawned uWSGI worker 1 (pid: 31716, cores: 30)
+spawned uWSGI worker 2 (pid: 31717, cores: 30)
+spawned uWSGI worker 3 (pid: 31718, cores: 30)
+spawned uWSGI worker 4 (pid: 31719, cores: 30)
+Not Found: /favicon.ico
+Internal Server Error: /bindemail/
+Traceback (most recent call last):
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/opt/Exam/apps/account/views.py", line 225, in get
+    token = requests.post('https://api.weibo.com/oauth2/access_token?client_id=' + weibo.client_id + '&client_s'
+NameError: name 'requests' is not defined
+Not Found: /favicon.ico
+Not Found: /images/zysy/circle.jpg
+['D']
+['D']
+['C']
+['对']
+['1']
+5
+4
+Not Found: /index
+Not Found: /api/myrank
+Internal Server Error: /bindemail/
+Traceback (most recent call last):
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/opt/Exam/env/lib64/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/opt/Exam/apps/account/views.py", line 225, in get
+    token = requests.post('https://api.weibo.com/oauth2/access_token?client_id=' + weibo.client_id + '&client_s'
+NameError: name 'requests' is not defined
+Not Found: /nmaplowercheck1596941902
+Not Found: /evox/about
+Not Found: /sdk
+Not Found: /HNAP1
+Not Found: /explicit_not_exist_path
+Not Found: /index.html
+Not Found: /index.php
+Not Found: /index.jsp
+Not Found: /admin/
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /404.html
+Not Found: /404.html
+Not Found: /r/cms/www/red/img/prompt.jpg
+Not Found: /r/cms/www/red/style/swiper.min.js
+Not Found: /wcm/
+Not Found: /phpMyAdmin/
+Not Found: /phpmyadmin/
+Not Found: /nmaplowercheck1597205279
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /sdk

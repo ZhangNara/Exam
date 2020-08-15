@@ -49,7 +49,8 @@ def set_bank(request):
                 if bank_template.name.split('.')[-1] not in ['xls', 'xlsx']:
                     return render(request, 'err.html')
                 bank = BankXlsx.objects.filter(bank_name=bank_name)
-                if not bank:
+                xlsx = BankXlsx.objects.filter(bank_xlsx=bank_template)
+                if not bank and not xlsx:
                     # 上传题库到backup文件夹
                     bank_repo = open(os.path.join(BACKUP_ROOT, bank_template.name), 'wb+')
                     for chunk in bank_template.chunks():
@@ -132,7 +133,7 @@ def set_bank(request):
                             pass
 
                 else:
-                    return render(request, 'setgames/bank.html', {'class_datas': back_class, 'err': '数据库名已存在'})
+                    return render(request, 'setgames/bank.html', {'class_datas': back_class, 'err': '题库名/题库文件已存在'})
             else:
                 return render(request, 'setgames/bank.html', {'class_datas': back_class, 'err': '数据不完整'})
         return render(request, 'setgames/bank.html', {'class_datas': back_class})
@@ -176,19 +177,26 @@ def set_test(request):
             endtime = request.POST.get('endtime')
             times = request.POST.get('times')
             ruleText = request.POST.get('ruleText', '')
+            name_exists = Game.objects.filter(game_name=name)
             if type and bank:
                 if name and num and score and starttime and endtime and times:
-                    g = Game(game_name=name, game_nums=num, game_score=score, create_time=starttime, end_time=endtime,
-                             time_bar=times, game_rule=ruleText, class_game_id=Classify.objects.get(class_name=type).id,
-                             bank_game_id=bank_info.id)
-                    g.save()
-                    bank_info.bank_bs += 1
-                    bank_info.save()
-                    return redirect('/detail/{}'.format(type))
+                    if not name_exists:
+                        if int(num) <= bank_info.bank_nums:
+                            g = Game(game_name=name, game_nums=num, game_score=score, create_time=starttime, end_time=endtime,
+                                     time_bar=times, game_rule=ruleText, class_game_id=Classify.objects.get(class_name=type).id,
+                                     bank_game_id=bank_info.id)
+                            g.save()
+                            bank_info.bank_bs += 1
+                            bank_info.save()
+                            return redirect('/detail/{}'.format(type))
+                        else:
+                            con = '数量超出所属题库的题数!'
+                    else:
+                        con = '该考试名已存在!'
                 else:
-                    con = '配置信息输入有误'
+                    con = '配置信息输入有误!'
             else:
-                con = '请选择题库'
+                con = '请选择题库!'
         return render(request, 'setgames/game.html',
                       {'class_datas': class_datas, 'bank_datas': bank_datas, 'type_date': type, 'bank': bank,
                        'bank_info': bank_info, 'con': con})
@@ -200,15 +208,14 @@ def set_test(request):
 def test_info(request, id):
     if request.user.is_authenticated:
         game_info = Game.objects.get(id=id)
-        return render(request, 'competition/index.html', {'game_info': game_info})
+        exists = GameInfo.objects.filter(ginfo_user_id=request.user.id,ginfo_game_id=game_info.id)
+        return render(request, 'competition/index.html', {'game_info': game_info,'exists':exists})
     else:
         return render(request, 'login.html')
 
 
 starttime1 = []
 suiji_list = []
-
-
 # 开始考试
 def test_start(request, id):
     import datetime
@@ -248,7 +255,10 @@ def test_start(request, id):
             yes = 0
             for i, data in zip(range(num), suiji_list[0]):
                 j = i + 1
-                name = request.POST.getlist('{}'.format(j))
+                name = request.POST.getlist('{}'.format(j),[])
+                if not name:
+                    name = ['空']
+                print(name)
                 if data.ques_type == '多选题':
                     if name == list(data.answer):
                         yes += 1
@@ -266,6 +276,10 @@ def test_start(request, id):
             jilu = GameInfo(total=my_score, times=my_time, yes=yes, no=int(no), ginfo_game_id=test_data.id,
                             ginfo_user_id=user.id)
             jilu.save()
+            # 参与考试人数
+            person_nums = BankXlsx.objects.get(id=int(test_data.bank_game_id))
+            person_nums.bank_person += 1
+            person_nums.save()
             return redirect('set:result', user.id, test_data.id)
 
         return render(request, 'competition/game.html', {
@@ -282,6 +296,7 @@ def result(request, uid, gid):
     user = UserProfile.objects.get(id=uid)
     userinfo = GameInfo.objects.filter(ginfo_user_id=uid, ginfo_game_id=gid)[0]
     rank = GameInfo.objects.order_by('-total')
+    rank = GameInfo.objects.filter(ginfo_game_id=gid).order_by('-total')
     for i in rank:
         count += 1
         if request.user.is_authenticated:
@@ -302,7 +317,7 @@ def rank(request):
         else:
             game_deatil = Game.objects.get(game_name=game)
             order = GameInfo.objects.filter(ginfo_game_id=game_deatil.id).order_by('-total')
-        good = GameInfo.objects.filter(ginfo_user_id=request.user.id).order_by('-total')[0]
+        good = GameInfo.objects.filter(ginfo_user_id=request.user.id).order_by('-total')
         return render(request, 'competition/rank.html', {'game': game, 'order': order, 'good': good})
     else:
         return render(request, 'login.html')

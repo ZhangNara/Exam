@@ -2,7 +2,9 @@ import xadmin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include, re_path
+from django.views.static import serve
 
+from .settings import STATIC_ROOT
 from account.views import RegisterView, ActiveUserView, ForCodeView, LoginView, ForgetPwdView, LogoutView, \
     ResetView, ModifyPwdView, weibo_login, Bindemail
 from apps.competition.views import *
@@ -42,5 +44,5 @@ urlpatterns = [
                   path('detail/<str>', class_detail, name='detail'),
                   path('set/', include('competition.urls', namespace='set')),
                   path('rank/', rank, name='rank'),
-
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+                  re_path(r'^static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT }),
+              ]
